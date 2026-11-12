@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 64px 16px 64px;
+    background-color:#FF69B4;
+    font-family: "Tektur", sans-serif;
+ 
+}
+
+
+header {
+background-color:#FF69B4;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promocao{
+    color: black;
+    text-decoration: none;
+}
+
+.idioma{
+    color: black;
+    text-decoration: none;
+    width: 107px;
+    text-align: right;
+
+}
+
+main {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-container{
+    background-color: #FF69B4;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-titulo{
+    width: 348px;
+    color: black;
+    font-weight: 200;
+}
+
+.conteudo-titulo h1{
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 90px;
+}
+
+.conteudo-titulo p{
+    font-size: 32px;
+}
+
+.conteudo-titulo strong{
+    color: #CC0808;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 90px;
+}
+
+.conteudo-tipo {
+    width: 348px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.conteudo-tipo p{
+    width: 72px;
+    text-align: center;
+}
+
+.navegacao-container{
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    line-height: 32px;
+    width: 750px;
+    align-self: center;
+}
+
+.navegacao-container .barra{
+    height: 2px;
+    width: 80%;
+    background-color: black;
+    align-self: center;
+}
+
+.navegacao-container .selecionado{
+    height: 3px;
+    width: 40%;
+    background-color: #CC0808;
+}
+
+footer{
+    width: 100%;
+    height: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.background{
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+@media (max-width: 768px){
+    body{
+        padding: 16px;
+    }
+    .promocao{
+        display:none;
+    }
+    .conteudo-tipo{
+        display:none;
+    }
+    .conteudo-titulo{
+    width: 150px;
+}
+    .conteudo-titulo h1{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .conteudo-titulo strong{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .conteudo-titulo p{
+        margin-top: 16px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 100;
+    }
+    .navegacao-container{
+        justify-content: space-between;
+        font-size: 32px;
+        line-height: 16px;
+        width: 110%;
+        align-self: center;
+    }
+}
