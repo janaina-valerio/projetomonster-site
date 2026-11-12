@@ -16,7 +16,6 @@ body{
 
 
 header {
-background-color:#FF69B4;
     width: 100%;
     height: 60px;
     display: flex;
@@ -45,7 +44,6 @@ main {
 }
 
 .conteudo-container{
-    background-color: #FF69B4;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
@@ -126,11 +124,20 @@ footer{
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
+    object-fit: cover;
+    z-index: -1;
 }
 
 @media (max-width: 768px){
     body{
-        padding: 16px;
+        overflow-x: hidden;
+        padding: 20px;
+        height: auto;
+        min-height: 100vh;
+    }
+    header {
+        gap: 12px;
+        justify-content: space-between;
     }
     .promocao{
         display:none;
