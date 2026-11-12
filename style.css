@@ -128,45 +128,65 @@ footer{
     z-index: -1;
 }
 
+/* MOBILE */
+
 @media (max-width: 768px){
     body{
-        overflow-x: hidden;
+        height: 100dvh;
         padding: 20px;
-        height: auto;
-        min-height: 100vh;
-    }
-    header {
-        gap: 12px;
         justify-content: space-between;
     }
-    .promocao{
+    header img {
+        height: 44px;
+        width: auto;
+    }
+       .promocao{
         display:none;
     }
     .conteudo-tipo{
         display:none;
     }
+    .idioma {
+        width: auto;
+    }
+    .conteudo-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
     .conteudo-titulo{
-    width: 150px;
+    width: 55%;
 }
     .conteudo-titulo h1{
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 38px;
+        line-height: 38px;
     }
     .conteudo-titulo strong{
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 38px;
+        line-height: 38px;
     }
     .conteudo-titulo p{
         margin-top: 16px;
-        font-size: 20px;
-        line-height: 20px;
-        font-weight: 100;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+    .conteudo-container > img {
+        width: 42%;
+        max-width: 72%;
+        height:72%;
+        object-fit: cover;
     }
     .navegacao-container{
-        justify-content: space-between;
-        font-size: 32px;
-        line-height: 16px;
-        width: 110%;
-        align-self: center;
+        font-size: 28px;
+        margin-bottom: 12px;
+        width: 100%;
     }
+    .background {
+        width: 100%;
+        justify-content: space-between;
+        opacity: 0.7;
+    }
+
 }
